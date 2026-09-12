@@ -1,0 +1,160 @@
+body {
+    background-color: #FAF9F6;
+    color: #0F172A;
+}
+
+.navbar {
+    background-color: #F0EDE6;
+}
+
+.navbar-brand {
+    color: #CD6A52;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #0F172A;
+}
+
+.nav-link:hover {
+    color: #CD6A52;
+}
+
+
+.about-section {
+    padding: 80px 20px 100px;
+}
+
+.about-content {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1.4;
+}
+
+.section-label {
+    color: #CD6A52;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.about-text h2 {
+    color: #0F172A;
+    font-size: 38px;
+    line-height: 1.25;
+    margin-bottom: 25px;
+}
+
+.about-text h2 span {
+  color: #CD6A52;
+}
+
+
+.about-text p:not(.section-label) {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-info {
+    flex: 0.8;
+    background-color: #F0EDE6;
+    padding: 30px;
+    border-top: 4px solid #CD6A52;
+    transition: transform 0.3s ease ,box-shadow 0.3s ease;
+}
+
+.about-info:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 10px 25px rgba(15px, 23px, 42px, 0.08);
+}
+
+
+.info-item {
+    padding: 18px 0;
+    border-bottom: 1px solid #d8d4cc;
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover{
+    transform: translateX(8px);
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-item span {
+    display: block;
+    color: #475569;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.info-item strong {
+    color: #0F172A;
+    font-size: 15px;
+}
+
+@media (max-width: 1279px) {
+
+    .about-content {
+        gap: 50px;
+    }
+
+    .about-text h2 {
+        font-size: 36px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 60px 20px 80px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 45px;
+        align-items: stretch;
+    }
+
+    .about-text h2 {
+        font-size: 32px;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .about-section {
+        padding: 50px 16px 70px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p:not(.section-label) {
+        font-size: 15px;
+    }
+
+    .about-info {
+        padding: 20px;
+    }
+
+}

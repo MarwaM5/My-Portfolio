@@ -834,3 +834,260 @@ body {
     }
 
 }
+
+
+.references-section {
+    padding: 80px 20px 100px;
+}
+
+.references-container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.references-section .section-label {
+    color: #CD6A52;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.references-section > .references-container > h2 {
+    color: #0F172A;
+    font-size: 36px;
+    line-height: 1.3;
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.references-card {
+    background-color: #F0EDE6;
+    border-top: 4px solid #CD6A52;
+    padding: 10px 30px;
+}
+
+.reference-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px 0;
+    border-bottom: 1px solid #d8d4cc;
+}
+
+.reference-item:last-child {
+    border-bottom: none;
+}
+
+.reference-number {
+    flex: 0 0 35px;
+    color: #CD6A52;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.reference-person {
+    flex: 1;
+}
+
+.reference-person h3 {
+    color: #0F172A;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.reference-person p {
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.reference-item a {
+    color: #475569;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.reference-item a:hover {
+    color: #CD6A52;
+    transform: translateX(5px);
+}
+
+
+
+@media (max-width: 1279px) {
+
+    .references-card {
+        padding: 10px 25px;
+    }
+
+    .reference-item {
+        gap: 20px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .references-section {
+        padding: 60px 20px 80px;
+    }
+
+    .references-section > .references-container > h2 {
+        font-size: 32px;
+    }
+
+    .references-card {
+        padding: 5px 22px;
+    }
+
+    .reference-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 22px 0;
+    }
+
+    .reference-number {
+        flex: none;
+    }
+
+    .reference-person {
+        flex: none;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    .references-section {
+        padding: 50px 16px 70px;
+    }
+
+    .references-section > .references-container > h2 {
+        font-size: 28px;
+    }
+
+    .references-card {
+        padding: 5px 20px;
+    }
+
+    .reference-item {
+        padding: 20px 0;
+    }
+
+    .reference-person h3 {
+        font-size: 19px;
+    }
+
+    .reference-item a {
+        font-size: 13px;
+    }
+}
+
+
+
+.footer {
+    background-color: #F0EDE6 !important;
+    border-top: 1px solid #d8d4cc;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 25px 0;
+}
+
+.footer-intro {
+    flex: 1;
+}
+
+.footer-intro h3 {
+    color: #0F172A;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.footer-intro p {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 430px;
+    margin: 0;
+}
+
+.footer-links {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    justify-content: flex-end;
+}
+
+.footer-links a {
+    color: #475569;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: #CD6A52;
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    border-top: 1px solid #d8d4cc;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    color: #475569;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-intro p {
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .footer-intro h3 {
+        font-size: 27px;
+    }
+
+    .footer-intro p {
+        font-size: 14px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+}

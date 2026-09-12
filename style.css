@@ -9,15 +9,30 @@ body {
 
 .navbar-brand {
     color: #CD6A52;
+    font-size: 24px;
     font-weight: 700;
+    
+    letter-spacing: -0.5px;
 }
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #CD6A52;
+    
+}
+
 
 .nav-link {
     color: #0F172A;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .nav-link:hover {
     color: #CD6A52;
+    background-color: #FAF9F6;
+    border-color: #d8d4cc;
 }
 
 
@@ -384,8 +399,13 @@ body {
     font-weight: 600;
     background-color: #FAF9F6;
     padding: 7px 12px;
+    transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
+.qualification-result:hover{
+    transform: translateY(-3px);
+    background-color: #e8e4dc;
+}
 
 
 
@@ -1023,22 +1043,32 @@ body {
 
 .footer-links {
     flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px 30px;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
 }
 
-.footer-links a {
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer-label {
+    color: #CD6A52;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.footer-contact a {
     color: #475569;
     font-size: 14px;
     text-decoration: none;
-    transition: color 0.25s ease, transform 0.25s ease;
+    transition: color 0.25s ease;
 }
 
-.footer-links a:hover {
+.footer-contact a:hover {
     color: #CD6A52;
-    transform: translateX(5px);
 }
 
 .footer-bottom {
@@ -1067,7 +1097,9 @@ body {
     }
 
     .footer-links {
-        justify-content: center;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
 
@@ -1082,12 +1114,16 @@ body {
     }
 
     .footer-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
+       grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .footer-links a {
         font-size: 13px;
     }
+}
+
+
+.section-divider{
+    border-top: 1px solid #d8d4cc;
 }

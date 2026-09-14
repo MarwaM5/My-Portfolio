@@ -173,7 +173,7 @@ body {
 
 .about-info:hover{
     transform:translateY(-5px);
-    box-shadow: 0 10px 25px rgba(15px, 23px, 42px, 0.08);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
 
 

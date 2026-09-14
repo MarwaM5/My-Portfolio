@@ -120,9 +120,7 @@ body {
         text-align: center;
     }
 
-    .hero-image {
-        flex: none;
-    }
+    
 
     .hero-image img {
         width: 220px;
@@ -791,7 +789,7 @@ body {
 
 
 
-.projects-grid {
+.projects-list {
     display: flex;
     gap: 25px;
     align-items: stretch;
@@ -891,7 +889,7 @@ body {
 
 @media (max-width: 1279px) {
 
-    .projects-grid {
+    .projects-list {
         gap: 20px;
     }
 
@@ -918,7 +916,7 @@ body {
         font-size: 32px;
     }
 
-    .projects-grid {
+    .projects-list {
         flex-direction: column;
         gap: 25px;
     }
@@ -1212,7 +1210,7 @@ body {
 
     .footer-links {
         width: 100%;
-        grid-template-columns: repeat(2, 1fr);
+        
         gap: 20px;
     }
 }

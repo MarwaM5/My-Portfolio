@@ -1,6 +1,5 @@
 body {
     background-color: #FAF9F6;
-    color: #0F172A;
 }
 
 .navbar {
@@ -12,8 +11,7 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
     font-weight: 700;
-    
-    letter-spacing: -0.5px;
+  
 }
 
 .navbar-brand:hover,
@@ -260,7 +258,7 @@ body {
 .experience-cards {
     display: flex;
     gap: 25px;
-    align-items: stretch;
+    
 }
 
 .experience-card {
@@ -494,7 +492,7 @@ body {
 .skills-cards {
     display: flex;
     gap: 25px;
-    align-items: stretch;
+    
 }
 
 .skills-card {
@@ -529,7 +527,6 @@ body {
 .skills-card-header h3 {
     color: #0F172A;
     font-size: 22px;
-    margin: 0;
 }
 
 
@@ -622,7 +619,7 @@ body {
 .projects-list {
     display: flex;
     gap: 25px;
-    align-items: stretch;
+    
 }
 
 
@@ -779,7 +776,14 @@ body {
     gap: 30px;
     padding: 25px 0;
     border-bottom: 1px solid #d8d4cc;
+    transition: transform 0.3s ease;
 }
+
+.reference-item:hover {        
+    transform: translateX(6px);
+}
+
+
 
 .reference-item:last-child {
     border-bottom: none;

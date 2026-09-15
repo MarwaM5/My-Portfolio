@@ -86,15 +86,19 @@ body {
     border-radius: 50%;
 }
 
-.cv-button {
-    display: inline-block;
+.hero-btns {
+    display: flex;
+    gap: 15px;
+    }
+
+.cv-connect-button {
     background-color: #CD6A52;
     color: #FAF9F6;
     padding: 12px 20px;
     text-decoration: none;
 }
 
-.cv-button:hover {
+.cv-connect-button:hover {
     background-color: #b95740;
 }
 
@@ -112,6 +116,11 @@ body {
     .hero-image img {
         width: 220px;
         height: 220px;
+    }
+
+     .hero-btns {
+        flex-direction: column; 
+        align-items: center;    
     }
 
 }

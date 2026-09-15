@@ -6,7 +6,7 @@ A responsive personal portfolio website built to showcase my background, skills,
 
 ## Preview
 
-![Portfolio Screenshot](screenshot.png)
+![Portfolio Screenshot](screenshot1.png)
 
 ## About
 

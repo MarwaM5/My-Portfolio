@@ -6,7 +6,7 @@ A responsive personal portfolio website built to showcase my background, skills,
 
 ## Preview
 
-![Portfolio Screenshot](Screenshot1.png)
+![Portfolio Screenshot](images/screenshot3.png)
 
 ## About
 
@@ -38,12 +38,13 @@ The layout adapts across breakpoints for desktop, tablet, and mobile screens, so
 
 ```
 portfolio/
+├── images/
+│   ├── marwa2.jpeg
+│   ├── pro-img1.jpeg
+│   └── pro-img2.jpeg
+│   └── screenshot3.png.jpeg
 ├── index.html
 ├── style.css
-├── pro-img1.jpeg
-├── pro-img2.jpeg
-├── marwa2.jpeg
-├── screenshot.png
 └── README.md
 ```
 

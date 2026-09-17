@@ -36,11 +36,15 @@ body {
 
 
 .hero-section {
+    min-height: calc(100vh - 76px);
+    display: flex;
+    align-items: center;
     padding: 80px 20px 100px;
 }
 
 .hero-content {
     max-width: 1050px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     gap: 80px;
@@ -53,12 +57,13 @@ body {
 
 .hero-text h1{
     color: #CD6A52;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
 .hero-text h2 {
     color: #0F172A;
-    font-size: 38px;
+    font-size: 46px;
     line-height: 1.25;
     margin-bottom: 25px;
 }
@@ -70,25 +75,34 @@ body {
 
 .hero-text p {
     color: #475569;
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 1.9;
+    
 }
 
 .hero-image {
-    flex: 0 0 280px;
+    flex: 0 0 400px;
 }
 
 .hero-image img {
-    width: 280px;
-    height: 280px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 50%;
+    
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
 }
 
 .hero-buttons {
     display: flex;
     gap: 15px;
+    margin-top: 50px;
+    
     }
 
 .cv-connect-button {
@@ -105,6 +119,11 @@ body {
 
 @media (max-width: 768px) {
 
+    .hero-section {
+        min-height: auto;
+        padding: 60px 20px 80px;
+    }
+
     .hero-content {
         flex-direction: column;
         gap: 45px;
@@ -114,8 +133,8 @@ body {
     
 
     .hero-image img {
-        width: 220px;
-        height: 220px;
+        width: 300px;
+        height: 300px;
     }
 
      .hero-buttons {
@@ -129,6 +148,11 @@ body {
 
     .hero-text h2 {
         font-size: 24px;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -229,9 +253,7 @@ body {
         font-size: 32px;
     }
 
-    .about-info {
-        width: 100%;
-    }
+
 
 }
 
@@ -458,7 +480,7 @@ body {
     }
 
     .qualification-date {
-        flex-basis: auto;
+        flex: none;
     }
 
 }
@@ -658,7 +680,7 @@ body {
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit:contain;
+    object-fit:fill;
     display: block;
     transition: transform 0.4s ease;
 }
@@ -736,9 +758,7 @@ body {
         gap: 25px;
     }
 
-    .project-image {
-        height: 240px;
-    }
+
 
 }
 
@@ -961,8 +981,6 @@ body {
     }
 
     .footer-links {
-        width: 100%;
-        
         gap: 20px;
     }
 }
